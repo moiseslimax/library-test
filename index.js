@@ -19,9 +19,24 @@ app.use('/', require('./src/routes')) //Rotas
 
 //Para prevenir erros nos testes
 const port = process.env.PORT || 5000
-
-app.listen(port, () => {
-    console.log('Server ativo na porta:', process.env.PORT)
+app.on('ready', () => {
+    app.listen(port, () => {
+        console.log(`Server is running on port ${port}`)
+    })
 })
 
+//Conectando MongoDB
+mongoose.connect(process.env.BACKEND_DB_HOST, {
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+    useFindAndModify: true,
+})
+mongoose.connection.once('open', () => {
+    console.log('Database running successfully!')
+    app.emit('ready')
+})
+mongoose.connection.on(
+    'error',
+    console.error.bind(console, 'connection error:')
+)
 module.exports = app

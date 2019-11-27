@@ -1,9 +1,36 @@
+const Book = require('../../../models/Book')
+const validateUpdateBook = require('../../utils/validators/validateUpdateBook')
+
 /**
- * @description Rota de adicionar livro
+ * @description Rota de atualizar/editar livro por ID
  *
  * @returns {Object} FeedBack
  */
 
 module.exports = async (req, res) => {
-    return res.send('chegou')
+    let body = req.body
+
+    let { errors } = validateUpdateBook(body)
+
+    if (Object.keys(errors).length >= 1) {
+        return res.status(400).send({ success: false, errors })
+    }
+
+    let updatedBook = await Book.findByIdAndUpdate(body.id, body.updateParams, {
+        new: true,
+    }).catch(err => {
+        return undefined
+    })
+
+    if (!updatedBook) {
+        return res.status(404).send({
+            success: false,
+            message: 'Nenhum livro encontrado com esse id',
+        })
+    } else {
+        return res.status(200).send({
+            success: true,
+            updatedBook,
+        })
+    }
 }

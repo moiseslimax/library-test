@@ -2,7 +2,6 @@ const routes = require('express').Router()
 
 //Rotas
 const addBook = require('./addBook')
-const getAllBooks = require('../LibraryRoutes/getAllBooks')
 const getBookById = require('./getBookById')
 const removeBook = require('./removeBook')
 const updateBook = require('./updateBook')
@@ -18,13 +17,13 @@ routes.post('/book', addBook)
 routes.get('/book', getBookById)
 
 /**
- * @description Rota de remover livro
+ * @description Rota de remover livro por ID
  */
 routes.delete('/book', removeBook)
 
 /**
  * @description Rota de atualizar/editar livro
  */
-routes.put('/book', updateBook)
+routes.patch('/book', updateBook)
 
 module.exports = routes
