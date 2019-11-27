@@ -5,6 +5,5 @@
  */
 
 module.exports = async (req, res) => {
-    console.log('chegou')
     return res.send('chegou')
 }
