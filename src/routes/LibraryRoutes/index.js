@@ -1,35 +1,29 @@
 const routes = require('express').Router()
 
 //Rotas
-const addBook = require('./addBook')
 const getAllBooks = require('./getAllBooks')
-const getBookById = require('./getBookById')
-const removeBook = require('./removeBook')
-const updateBook = require('./updateBook')
+const getAllUsers = require('./getAllUsers')
+const registerUser = require('../LibraryRoutes/registerUser')
+const signIn = require('./signIn')
 
 /**
  * @description Rota de adicionar Livro
  */
-routes.post('/book', addBook)
+routes.get('/users', getAllUsers)
 
 /**
  * @description Rota de consultar todos os Livros
  */
-routes.get('/all-book', getAllBooks)
+routes.get('/books', getAllBooks)
 
 /**
- * @description Rota de consultar livro por ID
+ * @description Rota de registrar usuario
  */
-routes.get('/book', getBookById)
+routes.post('/user', registerUser)
 
 /**
- * @description Rota de remover livro
+ * @description Rota de fazer login
  */
-routes.delete('/book', removeBook)
-
-/**
- * @description Rota de atualizar/editar livro
- */
-routes.put('/book', updateBook)
+routes.post('/signin', signIn)
 
 module.exports = routes

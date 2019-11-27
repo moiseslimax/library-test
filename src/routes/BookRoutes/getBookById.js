@@ -1,5 +1,5 @@
 const Book = require('../../../models/Book')
-const validateBookId = require('../../utils/validators/validateBookId')
+const validateBookId = require('../../utils/validators/book/validateBookId')
 
 /**
  * @description Rota de consultar livro por ID

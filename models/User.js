@@ -6,6 +6,12 @@ const UserSchema = new Schema({
     phone: String,
     email: String,
     password: String,
+    favoriteBooks: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Book',
+        },
+    ],
 })
 
 module.exports = model('User', UserSchema)

@@ -4,7 +4,7 @@ const validateUpdateUser = require('../../utils/validators/user/validateUpdateUs
 const User = require('../../../models/User')
 
 /**
- * @description Rota de atualizar/editar dados de usuario
+ * @description Rota de adicionar livros favoritos
  *
  * @returns {Object} FeedBack
  */
@@ -18,12 +18,7 @@ module.exports = async (req, res) => {
         return res.status(400).send({ success: false, errors })
     }
 
-    if (body.updateParams.password) {
-        body.updateParams.password = await bcrypt.hash(
-            body.updateParams.password,
-            12
-        )
-    }
+    let userAuth = req.header('Authorization')
 
     let user = await User.findByIdAndUpdate(body.id, body.updateParams, {
         new: true,

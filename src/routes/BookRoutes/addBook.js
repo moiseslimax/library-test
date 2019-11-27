@@ -1,4 +1,4 @@
-const validateBook = require('../../utils/validators/validateBookParams')
+const validateBook = require('../../utils/validators/book/validateBookParams')
 const Book = require('../../../models/Book')
 
 /**

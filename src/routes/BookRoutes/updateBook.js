@@ -1,5 +1,5 @@
 const Book = require('../../../models/Book')
-const validateUpdateBook = require('../../utils/validators/validateUpdateBook')
+const validateUpdateBook = require('../../utils/validators/book/validateUpdateBook')
 
 /**
  * @description Rota de atualizar/editar livro por ID
