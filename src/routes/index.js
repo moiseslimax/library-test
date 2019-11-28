@@ -1,8 +1,6 @@
 const routes = require('express').Router()
 
-//Auth
-const { checkAuth } = require('../utils/helpers/tokenHelper')
-
+//Indices de rotas
 const bookRoutes = require('./BookRoutes')
 const userRoutes = require('./UserRoutes')
 const libraryRoutes = require('./LibraryRoutes')
@@ -15,11 +13,11 @@ routes.use('/user', userRoutes)
 /**
  * @description Operacoes referentes a User
  */
-routes.use('/library', bookRoutes)
+routes.use('/book', bookRoutes)
 
 /**
  * @description Operacoes referentes a User
  */
-routes.use('/libraryx', libraryRoutes)
+routes.use('/library', libraryRoutes)
 
 module.exports = routes

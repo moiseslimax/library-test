@@ -1,0 +1,480 @@
+{
+	"info": {
+		"_postman_id": "f5acc6c7-1c24-4275-ab3b-f62ad615ea38",
+		"name": "teste-library",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "Rota de consultar dados de usuário - getUserById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGVlNGVhODgxN2FjMzYzYzI0NDBkNyIsImVtYWlsIjoibW9pc2VzMkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTQwMzY4LCJleHAiOjE1NzQ5NDM5Njh9.ZbXXTPUI0p5n4MVu1xHMVGNJmCav2jXXN9xeEL5_qw8",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/user/data?id=5ddee4ea8817ac363c2440d7",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"data"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5ddee4ea8817ac363c2440d7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rota de atualizar/editar usuário - updateUser",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGZlNzVhZTQ4ODliNDVkZThiNzY1MiIsImVtYWlsIjoibW9pc2VzNkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTU0ODY2LCJleHAiOjE1NzQ5NTg0NjZ9.4tZ98y2f-awRyX7m9AN5AtIxUiUfMtnCvz3BIuiUfJk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"5ddee4ea8817ac363c2440d7\",\n    \"updateParams\": {\n        \"name\": \"Moises Maldaner de Lima xxx\",\n        \"age\": \"23\",\n        \"phone\": \"51995601218\",\n        \"email\": \"moiseslimax@gmail.com\",\n        \"password\": \"ksaomdokamsd\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/user/update",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rota de adicionar livro a favorito - favoritebook",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGZlNDE1OTI0ZjE3NDNiYzYzZDliZSIsImVtYWlsIjoibW9pc2VzNUB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTU0MDA1LCJleHAiOjE1NzQ5NTc2MDV9.6rxry8M-p6kALH2WUKQgoPyNRbQv3YPhdyESeKHZARA"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"bookId\": \"5dde7369b87fb31e9fd5fe0d\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/user/favoritebook",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"favoritebook"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rota de remover usuario - removeUserBy",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGZlNzVhZTQ4ODliNDVkZThiNzY1MiIsImVtYWlsIjoibW9pc2VzNkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTU0ODY2LCJleHAiOjE1NzQ5NTg0NjZ9.4tZ98y2f-awRyX7m9AN5AtIxUiUfMtnCvz3BIuiUfJk"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": \"asdasdasdasdasd\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/user/remove",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"remove"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "library",
+			"item": [
+				{
+					"name": "Rota de fazer login - login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"moises6@teste.com\",\n\t\"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/library/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"library",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rota de consultar todos usuarios - get all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/library/users",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"library",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rota de consultar todos livros - get all books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/library/books",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"library",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rota de registrar usuário - signin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"moises teste\",\n\t\"email\": \"moises6@teste.com\",\n\t\"phone\": \"51995601218\",\n\t\"age\": \"23\",\n\t\"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/library/signin",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"library",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "book",
+			"item": [
+				{
+					"name": "Rota de adicionar livro a biblioteca- addbook",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGZlNzVhZTQ4ODliNDVkZThiNzY1MiIsImVtYWlsIjoibW9pc2VzNkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTU0ODY2LCJleHAiOjE1NzQ5NTg0NjZ9.4tZ98y2f-awRyX7m9AN5AtIxUiUfMtnCvz3BIuiUfJk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"Update sem Where - Um medo\",\n\t\"ISBN\": \"945\",\n\t\"category\": \"Comedia\",\n\t\"year\": \"2010\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/book/addbook",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"book",
+								"addbook"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rota de consultar livro por ID - getBookById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGVlNGVhODgxN2FjMzYzYzI0NDBkNyIsImVtYWlsIjoibW9pc2VzMkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTQwMzY4LCJleHAiOjE1NzQ5NDM5Njh9.ZbXXTPUI0p5n4MVu1xHMVGNJmCav2jXXN9xeEL5_qw8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/book/book?id=5dde440d15a8c913f1f723da",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"book",
+								"book"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5dde440d15a8c913f1f723da"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rota de remover livro - removeBookById",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGZlNzVhZTQ4ODliNDVkZThiNzY1MiIsImVtYWlsIjoibW9pc2VzNkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTU0ODY2LCJleHAiOjE1NzQ5NTg0NjZ9.4tZ98y2f-awRyX7m9AN5AtIxUiUfMtnCvz3BIuiUfJk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": \"5dde736bb87fb31e9fd5fe0e\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/book/remove",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"book",
+								"remove"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rota de atualizar livro - updateBook",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGVlNGVhODgxN2FjMzYzYzI0NDBkNyIsImVtYWlsIjoibW9pc2VzMkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTQwMzY4LCJleHAiOjE1NzQ5NDM5Njh9.ZbXXTPUI0p5n4MVu1xHMVGNJmCav2jXXN9xeEL5_qw8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"5dde440d15a8c913f1f723da\",\n    \"updateParams\": {\n        \"title\": \"Update sem where- Um medo\",\n        \"ISBN\": \"941\",\n        \"category\": \"Comedia\",\n        \"year\": \"2010\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/book/book",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"book",
+								"book"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

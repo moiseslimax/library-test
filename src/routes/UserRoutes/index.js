@@ -11,21 +11,21 @@ const addFavoriteBook = require('./addFavoriteBook')
 /**
  * @description Rota de consultar dados de usuario
  */
-routes.get('/user', getUserData)
+routes.get('/data', getUserData)
 
 /**
  * @description Rota de remover usuario
  */
-routes.delete('/user', checkAuth, removeUser)
+routes.delete('/remove', checkAuth, removeUser)
 
 /**
  * @description Rota de atualizar/editar usuario
  */
-routes.patch('/user', checkAuth, updateUserData)
+routes.patch('/update', checkAuth, updateUserData)
 
 /**
  * @description Rota de favoritar um livro por ID
  */
-routes.post('/favorite-book', checkAuth, addFavoriteBook)
+routes.post('/favoritebook', checkAuth, addFavoriteBook)
 
 module.exports = routes

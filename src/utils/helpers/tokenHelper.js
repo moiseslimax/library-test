@@ -1,5 +1,10 @@
 const jwt = require('jsonwebtoken')
 
+/**
+ * @description Gera token JWT baseado em secretkey
+ * @param {Object} user
+ * @returns {String} TokenJWT
+ */
 function generateToken(user) {
     return jwt.sign(
         {
@@ -12,6 +17,13 @@ function generateToken(user) {
     )
 }
 
+/**
+ * @description Valida token JWT
+ * @param {String} req.header
+ * @param {Function} next
+ * @param {Function} res
+ * @returns {String} Tokenjwt
+ */
 function checkAuth(req, res, next) {
     const authHeader = req.header('Authorization')
 

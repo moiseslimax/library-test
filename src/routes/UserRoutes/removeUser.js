@@ -8,7 +8,7 @@ const User = require('../../../models/User')
  */
 
 module.exports = async (req, res) => {
-    let body = req.query
+    let body = req.body
 
     const { errors } = validateId(body)
 

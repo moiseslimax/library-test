@@ -3,8 +3,8 @@ const routes = require('express').Router()
 //Rotas
 const getAllBooks = require('./getAllBooks')
 const getAllUsers = require('./getAllUsers')
-const registerUser = require('../LibraryRoutes/registerUser')
-const signIn = require('./signIn')
+const signIn = require('./signin')
+const login = require('./login')
 
 /**
  * @description Rota de adicionar Livro
@@ -19,11 +19,11 @@ routes.get('/books', getAllBooks)
 /**
  * @description Rota de registrar usuario
  */
-routes.post('/user', registerUser)
+routes.post('/signin', signIn)
 
 /**
  * @description Rota de fazer login
  */
-routes.post('/signin', signIn)
+routes.post('/login', login)
 
 module.exports = routes

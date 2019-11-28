@@ -11,21 +11,21 @@ const updateBook = require('./updateBook')
 /**
  * @description Rota de adicionar Livro
  */
-routes.post('/book', checkAuth, addBook)
+routes.post('/addbook', checkAuth, addBook)
 
 /**
  * @description Rota de consultar livro por ID
  */
-routes.get('/book', getBookById)
+routes.get('/data', getBookById)
 
 /**
  * @description Rota de remover livro por ID
  */
-routes.delete('/book', checkAuth, removeBook)
+routes.delete('/remove', checkAuth, removeBook)
 
 /**
  * @description Rota de atualizar/editar livro
  */
-routes.patch('/book', checkAuth, updateBook)
+routes.patch('/update', checkAuth, updateBook)
 
 module.exports = routes

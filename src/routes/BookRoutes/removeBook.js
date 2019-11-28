@@ -8,7 +8,7 @@ const validateBookId = require('../../utils/validators/book/validateBookId')
  */
 
 module.exports = async (req, res) => {
-    let body = req.query
+    let body = req.body
 
     const { errors } = validateBookId(body)
 
