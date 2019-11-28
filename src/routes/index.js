@@ -10,7 +10,7 @@ const libraryRoutes = require('./LibraryRoutes')
 /**
  * @description Operacoes referentes a Library
  */
-routes.use('/user', checkAuth, userRoutes)
+routes.use('/user', userRoutes)
 
 /**
  * @description Operacoes referentes a User
@@ -20,6 +20,6 @@ routes.use('/library', bookRoutes)
 /**
  * @description Operacoes referentes a User
  */
-routes.use('/libraryx', checkAuth, libraryRoutes)
+routes.use('/libraryx', libraryRoutes)
 
 module.exports = routes

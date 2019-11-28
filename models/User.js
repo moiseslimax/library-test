@@ -8,7 +8,7 @@ const UserSchema = new Schema({
     password: String,
     favoriteBooks: [
         {
-            type: mongoose.Schema.Types.ObjectId,
+            type: Schema.Types.ObjectId,
             ref: 'Book',
         },
     ],

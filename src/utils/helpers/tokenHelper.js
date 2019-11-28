@@ -1,5 +1,4 @@
 const jwt = require('jsonwebtoken')
-const { SECRET_KEY } = require('../config')
 
 function generateToken(user) {
     return jwt.sign(
@@ -21,8 +20,8 @@ function checkAuth(req, res, next) {
 
         if (token) {
             try {
-                const user = jwt.verify(token, SECRET_KEY)
-                return user
+                jwt.verify(token, process.env.SECRET_KEY)
+                next()
             } catch (error) {
                 return res
                     .status(401)

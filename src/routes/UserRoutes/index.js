@@ -1,5 +1,7 @@
 const routes = require('express').Router()
 
+const { checkAuth } = require('../../utils/helpers/tokenHelper')
+
 //Rotas
 const getUserData = require('./getUserData')
 const removeUser = require('./removeUser')
@@ -14,16 +16,16 @@ routes.get('/user', getUserData)
 /**
  * @description Rota de remover usuario
  */
-routes.delete('/user', removeUser)
+routes.delete('/user', checkAuth, removeUser)
 
 /**
- * @description Rota de atualizar/ed    itar usuario
+ * @description Rota de atualizar/editar usuario
  */
-routes.patch('/user', updateUserData)
+routes.patch('/user', checkAuth, updateUserData)
 
 /**
- * @description Rota de consultar livro por ID
+ * @description Rota de favoritar um livro por ID
  */
-routes.post('/book', addFavoriteBook)
+routes.post('/favorite-book', checkAuth, addFavoriteBook)
 
 module.exports = routes

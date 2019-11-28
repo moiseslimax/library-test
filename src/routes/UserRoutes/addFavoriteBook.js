@@ -1,7 +1,8 @@
-const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken')
 
-const validateUpdateUser = require('../../utils/validators/user/validateUpdateUser')
+const validateFavoriteBook = require('../../utils/validators/library/validateFavoriteBook')
 const User = require('../../../models/User')
+const Book = require('../../../models/Book')
 
 /**
  * @description Rota de adicionar livros favoritos
@@ -12,30 +13,40 @@ const User = require('../../../models/User')
 module.exports = async (req, res) => {
     let body = req.body
 
-    const { errors } = validateUpdateUser(body)
+    const { errors } = validateFavoriteBook(body)
 
     if (Object.keys(errors).length >= 1) {
         return res.status(400).send({ success: false, errors })
     }
 
-    let userAuth = req.header('Authorization')
-
-    let user = await User.findByIdAndUpdate(body.id, body.updateParams, {
-        new: true,
-    }).catch(err => {
+    let filteredBook = await Book.findById(body.bookId).catch(err => {
         return undefined
     })
 
-    if (!user) {
+    if (!filteredBook) {
         return res.status(404).send({
             success: false,
-            message: 'Nenhum usuario encontrado com esse id',
-        })
-    } else {
-        user.password = undefined
-        return res.status(200).send({
-            success: true,
-            user,
+            message: 'Livro não listado na biblioteca',
         })
     }
+
+    const token = req.header('Authorization').split('Bearer ')[1]
+    let userAuth = jwt.verify(token, process.env.SECRET_KEY)
+
+    let user = await User.findById(userAuth.id)
+
+    if (user.favoriteBooks.find(book => book.toString() === body.bookId)) {
+        return res.status(400).send({
+            success: false,
+            message: 'Livro já listado como favorito',
+        })
+    }
+    user.favoriteBooks.push(body.bookId)
+
+    await user.save()
+
+    return res.status(200).send({
+        success: true,
+        message: 'Livro adicionado a lista de favoritos',
+    })
 }
