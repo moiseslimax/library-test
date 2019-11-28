@@ -1,6 +1,6 @@
 const bcrypt = require('bcrypt')
 
-const validateSignIn = require('../../utils/validators/library/validateSignIn')
+const validateLogin = require('../../utils/validators/library/validateLogin')
 const User = require('../../../models/User')
 const { generateToken } = require('../../utils/helpers/tokenHelper')
 
@@ -13,7 +13,7 @@ const { generateToken } = require('../../utils/helpers/tokenHelper')
 module.exports = async (req, res) => {
     let body = req.body
 
-    const { errors } = validateSignIn(body)
+    const { errors } = validateLogin(body)
 
     if (Object.keys(errors).length >= 1) {
         return res.status(400).send({ success: false, errors })

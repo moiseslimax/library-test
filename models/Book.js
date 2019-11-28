@@ -4,7 +4,7 @@ const BookSchema = new Schema({
     title: String,
     ISBN: String,
     category: String,
-    year: String,
+    year: Number,
 })
 
 module.exports = model('Book', BookSchema)

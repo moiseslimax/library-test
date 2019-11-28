@@ -1,10 +1,15 @@
+/**
+ *  @description Função de validação de parâmetros
+ * @param {Object} body
+ * @returns {Object} errors
+ */
 module.exports = body => {
     let errors = {}
 
-    if (!body.id) errors.id = 'id cant not be empty'
+    if (!body.id) errors.id = 'O parâmetro {id} deve estar preenchido'
 
     if (Object.keys(body.updateParams).length < 1) {
-        errors.updateParams = 'Update Params cant not be empty'
+        errors.updateParams = 'O parâmetro {updateParams} deve estar preenchido'
     }
 
     return {

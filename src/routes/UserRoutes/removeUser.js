@@ -29,7 +29,7 @@ module.exports = async (req, res) => {
         user.password = undefined
         return res.status(200).send({
             success: true,
-            user,
+            message: 'Usuario excluido com sucesso!',
         })
     }
 }

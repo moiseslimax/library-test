@@ -22,7 +22,7 @@ function generateToken(user) {
  * @param {String} req.header
  * @param {Function} next
  * @param {Function} res
- * @returns {String} Tokenjwt
+ * @returns {Function} next()
  */
 function checkAuth(req, res, next) {
     const authHeader = req.header('Authorization')
