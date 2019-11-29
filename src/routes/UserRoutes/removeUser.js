@@ -2,9 +2,11 @@ const validateId = require('../../utils/validators/book/validateBookId')
 const User = require('../../../models/User')
 
 /**
- * @description Rota para remover dados de usuario
- *
- * @returns {Object} FeedBack
+ * @description Remove usuário por ID
+ * @memberof /users
+ * @param {*} req
+ * @param {*} res
+ * @returns {*} Feedback
  */
 
 module.exports = async (req, res) => {

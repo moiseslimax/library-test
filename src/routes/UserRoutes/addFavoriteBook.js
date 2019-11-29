@@ -5,9 +5,11 @@ const User = require('../../../models/User')
 const Book = require('../../../models/Book')
 
 /**
- * @description Rota de adicionar livros favoritos
- *
- * @returns {Object} FeedBack
+ * @description Adiciona livro aos favoritos de um usuário
+ * @memberof /users
+ * @param {*} req
+ * @param {*} res
+ * @returns {String} Feedback
  */
 
 module.exports = async (req, res) => {

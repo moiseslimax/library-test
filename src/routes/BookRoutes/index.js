@@ -14,12 +14,12 @@ const updateBook = require('./updateBook')
 routes.post('/addbook', checkAuth, addBook)
 
 /**
- * @description Rota de consultar livro por ID
+ * @description Rota de consultar livro
  */
 routes.get('/data', getBookById)
 
 /**
- * @description Rota de remover livro por ID
+ * @description Rota de remover livro
  */
 routes.delete('/remove', checkAuth, removeBook)
 

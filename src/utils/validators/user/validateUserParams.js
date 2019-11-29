@@ -15,7 +15,13 @@ module.exports = body => {
         }
     }
 
-    if (!body.phone) errors.phone = 'O parâmetro {phone} deve estar preenchido'
+    if (!body.phone) {
+        errors.phone = 'O parâmetro {phone} deve estar preenchido'
+    } else {
+        if (body.phone.length > 11 || isNaN(Number(body.phone))) {
+            errors.age = 'Telefone inválido!'
+        }
+    }
     if (!body.email) {
         errors.email = 'O parâmetro {email} deve estar preenchido'
     } else {

@@ -1,9 +1,11 @@
 const Book = require('../../../models/Book')
 
 /**
- * @description Rota de consultar todos os usuarios
- *
- * @returns {Object} FeedBack
+ * @description Consulta todos os livros da biblioteca
+ * @memberof /library
+ * @param {*} req
+ * @param {*} res
+ * @returns {Object} books
  */
 
 module.exports = async (req, res) => {

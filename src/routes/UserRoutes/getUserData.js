@@ -2,9 +2,11 @@ const validateId = require('../../utils/validators/book/validateBookId')
 const User = require('../../../models/User')
 
 /**
- * @description Rota de consultar dados de usuario
- *
- * @returns {Object} FeedBack
+ * @description Consulta usuário por ID
+ * @memberof /users
+ * @param {*} req
+ * @param {*} res
+ * @returns {Object} user
  */
 
 module.exports = async (req, res) => {

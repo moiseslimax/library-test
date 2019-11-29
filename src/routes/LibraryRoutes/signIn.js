@@ -5,9 +5,11 @@ const User = require('../../../models/User')
 const { generateToken } = require('../../utils/helpers/tokenHelper')
 
 /**
- * @description Rota de registrar usuario
- *
- * @returns {Object} FeedBack
+ * @description Cadastra o usuário na aplicação
+ * @memberof /library
+ * @param {*} req
+ * @param {*} res
+ * @returns {String} auth
  */
 
 module.exports = async (req, res) => {

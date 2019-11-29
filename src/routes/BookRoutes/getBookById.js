@@ -2,11 +2,12 @@ const Book = require('../../../models/Book')
 const validateBookId = require('../../utils/validators/book/validateBookId')
 
 /**
- * @description Rota de consultar livro por ID
- *
- * @returns {Object} FeedBack
+ * @description Consulta livro por ID
+ * @memberof /book
+ * @param {*} req
+ * @param {*} res
+ * @returns {Object} book
  */
-
 module.exports = async (req, res) => {
     let body = req.query
 

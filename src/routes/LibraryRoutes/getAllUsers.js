@@ -1,9 +1,11 @@
 const User = require('../../../models/User')
 
 /**
- * @description Rota de consultar todos os usuarios
- *
- * @returns {Object} FeedBack
+ * @description Consulta todos os usuários da biblioteca
+ * @memberof /library
+ * @param {*} req
+ * @param {*} res
+ * @returns {Object} users
  */
 
 module.exports = async (req, res) => {

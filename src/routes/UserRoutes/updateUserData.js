@@ -4,9 +4,11 @@ const validateUpdateUser = require('../../utils/validators/user/validateUpdateUs
 const User = require('../../../models/User')
 
 /**
- * @description Rota de atualizar/editar dados de usuario
- *
- * @returns {Object} FeedBack
+ * @description Atualiza/Edita usuário por id
+ * @memberof /users
+ * @param {*} req
+ * @param {*} res
+ * @returns {Object} user
  */
 
 module.exports = async (req, res) => {

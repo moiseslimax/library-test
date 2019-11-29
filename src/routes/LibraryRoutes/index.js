@@ -7,12 +7,12 @@ const signIn = require('./signin')
 const login = require('./login')
 
 /**
- * @description Rota de adicionar Livro
+ * @description Rota de consultar dados de todos os usuários
  */
 routes.get('/users', getAllUsers)
 
 /**
- * @description Rota de consultar todos os Livros
+ * @description Rota de consultar dados de todos os livros
  */
 routes.get('/books', getAllBooks)
 

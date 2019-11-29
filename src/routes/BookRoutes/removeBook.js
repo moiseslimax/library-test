@@ -2,9 +2,11 @@ const Book = require('../../../models/Book')
 const validateBookId = require('../../utils/validators/book/validateBookId')
 
 /**
- * @description Rota de remover livro por ID
- *
- * @returns {Object} FeedBack
+ * @description Remove livro da biblioteca
+ * @memberof /book
+ * @param {*} req
+ * @param {*} res
+ * @returns {*} Feedback
  */
 
 module.exports = async (req, res) => {
