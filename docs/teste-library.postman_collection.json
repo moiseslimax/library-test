@@ -71,13 +71,13 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGZlNzVhZTQ4ODliNDVkZThiNzY1MiIsImVtYWlsIjoibW9pc2VzNkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTU0ODY2LCJleHAiOjE1NzQ5NTg0NjZ9.4tZ98y2f-awRyX7m9AN5AtIxUiUfMtnCvz3BIuiUfJk",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGZlNzVhZTQ4ODliNDVkZThiNzY1MiIsImVtYWlsIjoibW9pc2VzNkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTcyNzE4LCJleHAiOjE1NzQ5NzYzMTh9.3J7iKAn5ebKfb3kOZ7RcyYNJnj41Qqy7likpwBrkyig",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": \"5ddee4ea8817ac363c2440d7\",\n    \"updateParams\": {\n        \"name\": \"Moises Maldaner de Lima xxx\",\n        \"age\": \"23\",\n        \"phone\": \"51995601218\",\n        \"email\": \"moiseslimax@gmail.com\",\n        \"password\": \"ksaomdokamsd\"\n    }\n}",
+							"raw": "{\n    \"id\": \"5ddee5338817ac363c2440d8\",\n    \"updateParams\": {\n        \"name\": \"Moises Maldaner de Lima xxx\",\n        \"age\": \"23\",\n        \"phone\": \"51995601218\",\n        \"email\": \"moiseslimax@gmail.com\",\n        \"password\": \"ksaomdokamsd\"\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -152,12 +152,12 @@
 							{
 								"key": "Authorization",
 								"type": "text",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGZlNzVhZTQ4ODliNDVkZThiNzY1MiIsImVtYWlsIjoibW9pc2VzNkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTU0ODY2LCJleHAiOjE1NzQ5NTg0NjZ9.4tZ98y2f-awRyX7m9AN5AtIxUiUfMtnCvz3BIuiUfJk"
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGZlNzVhZTQ4ODliNDVkZThiNzY1MiIsImVtYWlsIjoibW9pc2VzNkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTcyNzE4LCJleHAiOjE1NzQ5NzYzMTh9.3J7iKAn5ebKfb3kOZ7RcyYNJnj41Qqy7likpwBrkyig"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"id\": \"asdasdasdasdasd\"\n}",
+							"raw": "{\n\t\"id\": \"5ddee5338817ac363c2440d8\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -276,7 +276,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"moises teste\",\n\t\"email\": \"moises6@teste.com\",\n\t\"phone\": \"51995601218\",\n\t\"age\": \"23\",\n\t\"password\": \"123456\"\n}",
+							"raw": "{\n\t\"name\": \"moises teste\",\n\t\"email\": \"moises8@teste.com\",\n\t\"phone\": \"51995601218\",\n\t\"age\": \"100\",\n\t\"password\": \"123456\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -316,7 +316,7 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGZlNzVhZTQ4ODliNDVkZThiNzY1MiIsImVtYWlsIjoibW9pc2VzNkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTU0ODY2LCJleHAiOjE1NzQ5NTg0NjZ9.4tZ98y2f-awRyX7m9AN5AtIxUiUfMtnCvz3BIuiUfJk",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGZlNzVhZTQ4ODliNDVkZThiNzY1MiIsImVtYWlsIjoibW9pc2VzNkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTcyNzE4LCJleHAiOjE1NzQ5NzYzMTh9.3J7iKAn5ebKfb3kOZ7RcyYNJnj41Qqy7likpwBrkyig",
 								"type": "text"
 							}
 						],
@@ -359,7 +359,7 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGVlNGVhODgxN2FjMzYzYzI0NDBkNyIsImVtYWlsIjoibW9pc2VzMkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTQwMzY4LCJleHAiOjE1NzQ5NDM5Njh9.ZbXXTPUI0p5n4MVu1xHMVGNJmCav2jXXN9xeEL5_qw8",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGZlNzVhZTQ4ODliNDVkZThiNzY1MiIsImVtYWlsIjoibW9pc2VzNkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTcyNzE4LCJleHAiOjE1NzQ5NzYzMTh9.3J7iKAn5ebKfb3kOZ7RcyYNJnj41Qqy7likpwBrkyig",
 								"type": "text"
 							}
 						],
@@ -373,19 +373,19 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:5000/book/book?id=5dde440d15a8c913f1f723da",
+							"raw": "localhost:5000/book/data?id=5ddfe7c9e4889b45de8b7653",
 							"host": [
 								"localhost"
 							],
 							"port": "5000",
 							"path": [
 								"book",
-								"book"
+								"data"
 							],
 							"query": [
 								{
 									"key": "id",
-									"value": "5dde440d15a8c913f1f723da"
+									"value": "5ddfe7c9e4889b45de8b7653"
 								}
 							]
 						}
@@ -405,13 +405,13 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGZlNzVhZTQ4ODliNDVkZThiNzY1MiIsImVtYWlsIjoibW9pc2VzNkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTU0ODY2LCJleHAiOjE1NzQ5NTg0NjZ9.4tZ98y2f-awRyX7m9AN5AtIxUiUfMtnCvz3BIuiUfJk",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGZlNzVhZTQ4ODliNDVkZThiNzY1MiIsImVtYWlsIjoibW9pc2VzNkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTcyNzE4LCJleHAiOjE1NzQ5NzYzMTh9.3J7iKAn5ebKfb3kOZ7RcyYNJnj41Qqy7likpwBrkyig",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"id\": \"5dde736bb87fb31e9fd5fe0e\"\n}",
+							"raw": "{\n\t\"id\": \"5dde7369b87fb31e9fd5fe0d\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -445,13 +445,13 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGVlNGVhODgxN2FjMzYzYzI0NDBkNyIsImVtYWlsIjoibW9pc2VzMkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTQwMzY4LCJleHAiOjE1NzQ5NDM5Njh9.ZbXXTPUI0p5n4MVu1xHMVGNJmCav2jXXN9xeEL5_qw8",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGZlNzVhZTQ4ODliNDVkZThiNzY1MiIsImVtYWlsIjoibW9pc2VzNkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTcyNzE4LCJleHAiOjE1NzQ5NzYzMTh9.3J7iKAn5ebKfb3kOZ7RcyYNJnj41Qqy7likpwBrkyig",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": \"5dde440d15a8c913f1f723da\",\n    \"updateParams\": {\n        \"title\": \"Update sem where- Um medo\",\n        \"ISBN\": \"941\",\n        \"category\": \"Comedia\",\n        \"year\": \"2010\"\n    }\n}",
+							"raw": "{\n    \"id\": \"5de02f6a4e161655042db6fe\",\n    \"updateParams\": {\n        \"title\": \"Update sem where- Um respeito\",\n        \"ISBN\": \"941\",\n        \"category\": \"Comedia\",\n        \"year\": \"2010\"\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -459,14 +459,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:5000/book/book",
+							"raw": "localhost:5000/book/update",
 							"host": [
 								"localhost"
 							],
 							"port": "5000",
 							"path": [
 								"book",
-								"book"
+								"update"
 							]
 						}
 					},
