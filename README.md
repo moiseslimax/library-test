@@ -25,7 +25,7 @@ Api REST simulando uma biblioteca.
 yarn install ou yarn
 ```
 
--   Criar e configurar o arquivo .env com dados do .env_default (**Não é o correto para a estrutura mas deixei um .env pré configurado com uma conexao valida para um banco de dados mongoDB hospedado no Atlas para facilitar os testes**)
+-   Criar e configurar o arquivo .env com dados do .env_default (**Não é o correto para a segurança mas deixei um .env pré configurado com uma conexao valida para um banco de dados mongoDB hospedado no Atlas para facilitar os testes**)
 
 *   Caso utilizado **POSTMAN para consultar Endpoints**, importar collection que está na pasta ./docs do projeto. Nela tem todas as rotas com payload exemplo
 
