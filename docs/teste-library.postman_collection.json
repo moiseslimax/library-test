@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "f5acc6c7-1c24-4275-ab3b-f62ad615ea38",
+		"_postman_id": "0be19423-9107-4d83-a629-f13800f09187",
 		"name": "teste-library",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -31,15 +31,10 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
+							"raw": ""
 						},
 						"url": {
-							"raw": "localhost:5000/user/data?id=5ddee4ea8817ac363c2440d7",
+							"raw": "localhost:5000/user/data?id=5de0fa3bfdad0836d0238350",
 							"host": [
 								"localhost"
 							],
@@ -51,7 +46,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "5ddee4ea8817ac363c2440d7"
+									"value": "5de0fa3bfdad0836d0238350"
 								}
 							]
 						}
@@ -71,18 +66,13 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGZlNzVhZTQ4ODliNDVkZThiNzY1MiIsImVtYWlsIjoibW9pc2VzNkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTcyNzE4LCJleHAiOjE1NzQ5NzYzMTh9.3J7iKAn5ebKfb3kOZ7RcyYNJnj41Qqy7likpwBrkyig",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTBmZTEzMTcwMmY5NjIxNDFlZTExMyIsImVtYWlsIjoibW9pc2VzOUB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc1MDI2MTk1LCJleHAiOjE1NzUwMjk3OTV9.U0WfKkXmNR8oYIL2lDVGX22KSORbAxFMwjWRIIChEvE",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": \"5ddee5338817ac363c2440d8\",\n    \"updateParams\": {\n        \"name\": \"Moises Maldaner de Lima xxx\",\n        \"age\": \"23\",\n        \"phone\": \"51995601218\",\n        \"email\": \"moiseslimax@gmail.com\",\n        \"password\": \"ksaomdokamsd\"\n    }\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
+							"raw": "{\n    \"id\": \"5de0fa3bfdad0836d0238350\",\n    \"updateParams\": {\n        \"name\": \"Moises Maldaner de Lima xxx\",\n        \"age\": \"23\",\n        \"phone\": \"51995601218\",\n        \"email\": \"moiseslimax@gmail.com\",\n        \"password\": \"ksaomdokamsd\"\n    }\n}"
 						},
 						"url": {
 							"raw": "localhost:5000/user/update",
@@ -112,17 +102,12 @@
 							{
 								"key": "Authorization",
 								"type": "text",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGZlNDE1OTI0ZjE3NDNiYzYzZDliZSIsImVtYWlsIjoibW9pc2VzNUB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTU0MDA1LCJleHAiOjE1NzQ5NTc2MDV9.6rxry8M-p6kALH2WUKQgoPyNRbQv3YPhdyESeKHZARA"
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTBmYTNiZmRhZDA4MzZkMDIzODM1MCIsImVtYWlsIjoibW9pc2VzbGltYXhAZ21haWwuY29tIiwibmFtZSI6Ik1vaXNlcyBNYWxkYW5lciBkZSBMaW1hIHh4eCIsImlhdCI6MTU3NTAyNjQzNiwiZXhwIjoxNTc1MDMwMDM2fQ.LVuKlCu4bvFk2xCZ1R3Py8Lnh1ebUC54iQbhwWNQdsw"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"bookId\": \"5dde7369b87fb31e9fd5fe0d\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
+							"raw": "{\n\t\"bookId\": \"5de0fe721702f962141ee114\"\n}"
 						},
 						"url": {
 							"raw": "localhost:5000/user/favoritebook",
@@ -152,17 +137,12 @@
 							{
 								"key": "Authorization",
 								"type": "text",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGZlNzVhZTQ4ODliNDVkZThiNzY1MiIsImVtYWlsIjoibW9pc2VzNkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTcyNzE4LCJleHAiOjE1NzQ5NzYzMTh9.3J7iKAn5ebKfb3kOZ7RcyYNJnj41Qqy7likpwBrkyig"
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTBmYTNiZmRhZDA4MzZkMDIzODM1MCIsImVtYWlsIjoibW9pc2VzbGltYXhAZ21haWwuY29tIiwibmFtZSI6Ik1vaXNlcyBNYWxkYW5lciBkZSBMaW1hIHh4eCIsImlhdCI6MTU3NTAyNjQzNiwiZXhwIjoxNTc1MDMwMDM2fQ.LVuKlCu4bvFk2xCZ1R3Py8Lnh1ebUC54iQbhwWNQdsw"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"id\": \"5ddee5338817ac363c2440d8\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
+							"raw": "{\n\t\"id\": \"5de0fe131702f962141ee113\"\n}"
 						},
 						"url": {
 							"raw": "localhost:5000/user/remove",
@@ -203,12 +183,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"email\": \"moises6@teste.com\",\n\t\"password\": \"123456\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
+							"raw": "{\n\t\"email\": \"moiseslimax@gmail.com\",\n\t\"password\": \"ksaomdokamsd\"\n}"
 						},
 						"url": {
 							"raw": "localhost:5000/library/login",
@@ -276,12 +251,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"moises teste\",\n\t\"email\": \"moises8@teste.com\",\n\t\"phone\": \"51995601218\",\n\t\"age\": \"100\",\n\t\"password\": \"123456\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
+							"raw": "{\n\t\"name\": \"moises teste\",\n\t\"email\": \"moises9@teste.com\",\n\t\"phone\": \"51995601218\",\n\t\"age\": \"23\",\n\t\"password\": \"ksaomdokamsd\"\n}"
 						},
 						"url": {
 							"raw": "localhost:5000/library/signin",
@@ -316,18 +286,13 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGZlNzVhZTQ4ODliNDVkZThiNzY1MiIsImVtYWlsIjoibW9pc2VzNkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTcyNzE4LCJleHAiOjE1NzQ5NzYzMTh9.3J7iKAn5ebKfb3kOZ7RcyYNJnj41Qqy7likpwBrkyig",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTBmZTEzMTcwMmY5NjIxNDFlZTExMyIsImVtYWlsIjoibW9pc2VzOUB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc1MDI2MTk1LCJleHAiOjE1NzUwMjk3OTV9.U0WfKkXmNR8oYIL2lDVGX22KSORbAxFMwjWRIIChEvE",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"title\": \"Update sem Where - Um medo\",\n\t\"ISBN\": \"945\",\n\t\"category\": \"Comedia\",\n\t\"year\": \"2010\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
+							"raw": "{\n\t\"title\": \"Update sem Where - Um medo\",\n\t\"ISBN\": \"945\",\n\t\"category\": \"Comedia\",\n\t\"year\": \"2010\"\n}"
 						},
 						"url": {
 							"raw": "localhost:5000/book/addbook",
@@ -359,21 +324,16 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGZlNzVhZTQ4ODliNDVkZThiNzY1MiIsImVtYWlsIjoibW9pc2VzNkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTcyNzE4LCJleHAiOjE1NzQ5NzYzMTh9.3J7iKAn5ebKfb3kOZ7RcyYNJnj41Qqy7likpwBrkyig",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGVlNGVhODgxN2FjMzYzYzI0NDBkNyIsImVtYWlsIjoibW9pc2VzMkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTQwMzY4LCJleHAiOjE1NzQ5NDM5Njh9.ZbXXTPUI0p5n4MVu1xHMVGNJmCav2jXXN9xeEL5_qw8",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
+							"raw": ""
 						},
 						"url": {
-							"raw": "localhost:5000/book/data?id=5ddfe7c9e4889b45de8b7653",
+							"raw": "localhost:5000/book/data?id=5de0fe721702f962141ee114",
 							"host": [
 								"localhost"
 							],
@@ -385,7 +345,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "5ddfe7c9e4889b45de8b7653"
+									"value": "5de0fe721702f962141ee114"
 								}
 							]
 						}
@@ -405,18 +365,13 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGZlNzVhZTQ4ODliNDVkZThiNzY1MiIsImVtYWlsIjoibW9pc2VzNkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTcyNzE4LCJleHAiOjE1NzQ5NzYzMTh9.3J7iKAn5ebKfb3kOZ7RcyYNJnj41Qqy7likpwBrkyig",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTBmYTNiZmRhZDA4MzZkMDIzODM1MCIsImVtYWlsIjoibW9pc2VzbGltYXhAZ21haWwuY29tIiwibmFtZSI6Ik1vaXNlcyBNYWxkYW5lciBkZSBMaW1hIHh4eCIsImlhdCI6MTU3NTAyNjQzNiwiZXhwIjoxNTc1MDMwMDM2fQ.LVuKlCu4bvFk2xCZ1R3Py8Lnh1ebUC54iQbhwWNQdsw",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"id\": \"5dde7369b87fb31e9fd5fe0d\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
+							"raw": "{\n\t\"id\": \"5de0fe721702f962141ee114\"\n}"
 						},
 						"url": {
 							"raw": "localhost:5000/book/remove",
@@ -445,18 +400,13 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGZlNzVhZTQ4ODliNDVkZThiNzY1MiIsImVtYWlsIjoibW9pc2VzNkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTcyNzE4LCJleHAiOjE1NzQ5NzYzMTh9.3J7iKAn5ebKfb3kOZ7RcyYNJnj41Qqy7likpwBrkyig",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGVlNGVhODgxN2FjMzYzYzI0NDBkNyIsImVtYWlsIjoibW9pc2VzMkB0ZXN0ZS5jb20iLCJuYW1lIjoibW9pc2VzIHRlc3RlIiwiaWF0IjoxNTc0OTQwMzY4LCJleHAiOjE1NzQ5NDM5Njh9.ZbXXTPUI0p5n4MVu1xHMVGNJmCav2jXXN9xeEL5_qw8",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": \"5de02f6a4e161655042db6fe\",\n    \"updateParams\": {\n        \"title\": \"Update sem where- Um respeito\",\n        \"ISBN\": \"941\",\n        \"category\": \"Comedia\",\n        \"year\": \"2010\"\n    }\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
+							"raw": "{\n    \"id\": \"5dde440d15a8c913f1f723da\",\n    \"updateParams\": {\n        \"title\": \"Update sem where- Um medo\",\n        \"ISBN\": \"941\",\n        \"category\": \"Comedia\",\n        \"year\": \"2010\"\n    }\n}"
 						},
 						"url": {
 							"raw": "localhost:5000/book/update",
